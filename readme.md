@@ -28,7 +28,7 @@ Challenge submissions will be evaluating a candidates ability to:
 needing to be an expert on them
 
 - Comprehend provided existing work enough to be able to complete challenges by
- replicate and extend using the libs provided
+ replicate-and-extend using the libs provided
 
 - Ability to solve problems with provided libs in a functional style
 
