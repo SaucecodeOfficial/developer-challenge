@@ -1,5 +1,3 @@
-![Saucecode](https://saucecode.tech/images/own/Logo.png =250x)
-
 # Saucecode Developer Challenge
 
 Welcome the the Saucecode developer challenge, 
