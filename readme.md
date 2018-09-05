@@ -79,7 +79,7 @@ published as private packages on our internal [Verdaccio](https://github.com/ver
 
 ### Dependencies
 
-Auditioning packages from npm and github, where quality and churn are always are concerns, is such a time consuming and dedicated effort its practically
+Auditioning packages from npm and github, where quality and churn are valid concerns, is such a time consuming and dedicated effort its practically
 a life style. 
 
 This project's libs implement the following battled tested dependencies:
