@@ -1,6 +1,8 @@
+![Saucecode](https://saucecode.tech/images/own/Logo.png =250x)
+
 # Saucecode Developer Challenge
 
-Welcome the Saucecode developer challenge, 
+Welcome the the Saucecode developer challenge, 
 prepared for the senior candidate with 
 extensive exposure to the fast churn Node / npm eco-system.
 
@@ -25,7 +27,7 @@ structured this challenge to include both code comprehension as well as writing 
 Challenge submissions will be evaluating a candidates ability to:
 
 - Investigate to grok and hack under-the-hood dependencies without necessarily 
-needing to be an export on them
+needing to be an expert on them
 
 - Comprehend provided existing work enough to be able to complete challenges by
  replicate and extend using the libs provided
@@ -208,6 +210,7 @@ Utility for declaring and composing features on both the web and server.
 Signature:
 ```
 function createFeature(factory: (nextProps) => FeatureDefinition, defaultProps?: object) => Feature
+
 ```
 
 Reviewing the included core server and web implementations as well as the 
@@ -219,6 +222,7 @@ A declarative interface over redux, redux-toolbelt and redux logic to avoid unne
 and enforce a consistent and predictable functional state management style of:
 ```
 guard(s) - allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
+
 ```
 
 The fundamental building block for an application's state management.
@@ -232,6 +236,7 @@ guards: (guard, { actions, mutations }) => [ guard(...) ]
 effects: (fx, { actions, mutations }) => [ guard(...) ]
 onInit: ({ dispatch, getState, actions, mutations, ...ctx }) => void
 }
+
 ```
 
 MUTATIONS:
@@ -241,10 +246,12 @@ invoked by the generated action creator
 A mutation is created with the mutation function:
 ```
 mutation(actionTypes: string | string[], reducer: (state, action)=> nextState) {}
+
 ```
 which returns the following for composing into the consuming statebox:
 ```
 { mutations: [f()], actions:[''], reducer(){} }
+
 ```
 
 EFFECTS / GUARDS:
@@ -254,6 +261,7 @@ implemented with simpler semantics and sensible defaults:
 ```
 guard -> validate
 effect -> process
+
 ```
 
 STATE STORE:
@@ -270,6 +278,7 @@ middleware: [ ... ],
 enhance: (appliedMiddleware) => [ ... ]
 initial: { ... }
 }
+
 ```
 
 ROUTING:
@@ -300,6 +309,7 @@ and run:
 
 ```
 yarn install
+
 ```
 
 You will need to create an empty Mysql or Postgres DB and enter the 
@@ -377,3 +387,5 @@ All the best.
 
 Should you encounter any issues or have any questions regarding the challenge, please feel free
 to open an issue.
+
+
