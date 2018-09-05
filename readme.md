@@ -174,6 +174,7 @@ import { task } from './libs'
 const filterSomething = task(
   t => list => t.filter(item => t.eq(item.name, 'something'), list)
 )
+
 ```
 
 #### api-box
@@ -194,7 +195,7 @@ function createApiBox({
         afterConfig(app) => void,
         onSetup(app) => void,
         onStart(app) => void,
-    }
+    
 }) => ApiBox
 ```
 Reviewing the included core server implementations and the lib code 
@@ -207,6 +208,7 @@ Utility for declaring and composing features on both the web and server.
 Signature:
 ```
 function createFeature(factory: (nextProps) => FeatureDefinition, defaultProps?: object) => Feature
+
 ```
 
 Reviewing the included core server and web implementations as well as the 
@@ -217,7 +219,8 @@ platform's lib code itself will reveal the inner workings of this top level sign
 A declarative interface over redux, redux-toolbelt and redux logic to avoid unnecessary boilerplate
 and enforce a consistent and predictable functional state management style of:
 ```
-guard(s) -allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
+guard(s) - allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
+
 ```
 
 The fundamental building block for an application's state management.
@@ -231,31 +234,35 @@ guards: (guard, { actions, mutations }) => [ guard(...) ]
 effects: (fx, { actions, mutations }) => [ guard(...) ]
 onInit: ({ dispatch, getState, actions, mutations, ...ctx }) => void
 }
+
 ```
 
-MUTATIONS:
+##### Mutations:
 
 Mutations of state are defined as the combination of action types and reducers,
 invoked by the generated action creator
 A mutation is created with the mutation function:
 ```
 mutation(actionTypes: string | string[], reducer: (state, action)=> nextState) {}
+
 ```
 which returns the following for composing into the consuming statebox:
 ```
 { mutations: [f()], actions:[''], reducer(){} }
+
 ```
 
-EFFECTS / GUARDS:
+##### Effects / Guards:
 
 A light weight wrapper over the most excellent [redux-logic](https://github.com/jeffbski/redux-logic)
 implemented with simpler semantics and sensible defaults:
 ```
 guard -> validate
 effect -> process
+
 ```
 
-STATE STORE:
+##### State Store:
 
 A light weight wrapper over redux's createStore with the
 ability to combine and extend further.
@@ -269,16 +276,17 @@ middleware: [ ... ],
 enhance: (appliedMiddleware) => [ ... ]
 initial: { ... }
 }
+
 ```
 
-ROUTING:
+##### Routing:
 
 Routing is implemented with the most excellent [redux-first-router](https://github.com/faceyspacey/redux-first-router)
 State Box and Store will be extended to implement routing.
 
 Review the included core web implementations for usage examples.
 
-#### schemas
+#### Schemas:
 
 Internally we use Mozilla's React Json schema form extensively and have
 created libs to assist in declaring form, nav and view schemas.
@@ -377,5 +385,3 @@ All the best.
 
 Should you encounter any issues or have any questions regarding the challenge, please feel free
 to open an issue.
-
-
