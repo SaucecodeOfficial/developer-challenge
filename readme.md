@@ -226,8 +226,8 @@ State box takes the following props:
 name: string,
 initial: any,
 mutations: mutation => [ mutation(...) ],
-guards: (guard, { actions, mutations }) => [ guard(...) ]
-effects: (fx, { actions, mutations }) => [ guard(...) ]
+guards: (guard, { actions, mutations }) => [ guard(...) ],
+effects: (fx, { actions, mutations }) => [ guard(...) ],
 onInit: ({ dispatch, getState, actions, mutations, ...ctx }) => void
 }
 ```
@@ -265,7 +265,7 @@ boxes: [ stateBox(...) ],
 context: { ... },
 reducers: { ... },
 middleware: [ ... ],
-enhance: (appliedMiddleware) => [ ... ]
+enhance: (appliedMiddleware) => [ ... ],
 initial: { ... }
 }
 ```
