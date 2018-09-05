@@ -186,14 +186,14 @@ Signature:
 function createApiBox({
     models: (createModel) => [],
     services: (createService, models, hooks) => [],
-    channels: (app) => void
+    channels: (app) => void,
     lifecycle: {
         beforeConfig(app) => void,
         authConfig(app) => void,
         afterConfig(app) => void,
         onSetup(app) => void,
         onStart(app) => void,
-    
+    },
 }) => ApiBox
 ```
 Reviewing the included core server implementations and the lib code 
@@ -216,7 +216,7 @@ platform's lib code itself will reveal the inner workings of this top level sign
 A declarative interface over redux, redux-toolbelt and redux logic to avoid unnecessary boilerplate
 and enforce a consistent and predictable functional state management style of:
 ```
-guard(s) - allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
+guard(s) -(allow/reject)-> mutation(s) -> side effect(s) -> mutation(s)
 ```
 
 The fundamental building block for an application's state management.
@@ -274,8 +274,13 @@ initial: { ... }
 
 Routing is implemented with the most excellent [redux-first-router](https://github.com/faceyspacey/redux-first-router)
 State Box and Store will be extended to implement routing.
+Why not React Router? Well in functional terms, routing is an input and UI is an IO side effect of resulting state mutation.
+In previous versions of our platform, we implmented the same pattern as redux-first-router using React Router 
+and a lot of duct-tape and overhead. 
+Since migrating to redux-first-router, we haven't looked back.
 
-Review the included core web implementations for usage examples.
+Review the included core web implementations for usage examples, and pay attention to the authentication / authorization guard
+of the account feature.
 
 #### Schemas:
 
