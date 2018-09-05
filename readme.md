@@ -217,7 +217,7 @@ platform's lib code itself will reveal the inner workings of this top level sign
 A declarative interface over redux, redux-toolbelt and redux logic to avoid unnecessary boilerplate
 and enforce a consistent and predictable functional state management style of:
 ```
-guard(s) - allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
+guard(s) -allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
 ```
 
 The fundamental building block for an application's state management.
