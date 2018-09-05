@@ -55,7 +55,7 @@ The same said for state management and Api libs.
 
 Despite these libs being the modern marvels of technological progress, we've found that there is 
 a gap in productivity and cohesion.
-Wiring all your favorite libs, packages, lazers and light-sabres together introduces a lot of moving
+Wiring all your favorite libs, lazers and light-sabres together introduces a lot of moving
 parts, boiler-plating and inconsistency in developer implementation of said libs and light-sabres.
 
 We've worked extensively on creating a standard, cross platform interface and supporting policies 
