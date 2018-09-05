@@ -51,7 +51,7 @@ For example, when solving an applications presentation you are faced with an ove
 of choices in view and state management libraries, essentially doing the same thing.
 Whether you choose React, Vue, Angular or something esoteric, all these libs solve the same problem
 in relatively similar ways.
-The same can said for state management and Api libs.
+The same said for state management and Api libs.
 
 Despite these libs being the modern marvels of technological progress, we've found that there is 
 a gap in productivity and cohesion.
