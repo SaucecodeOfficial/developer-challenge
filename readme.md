@@ -341,7 +341,7 @@ chat features that have been minimally setup already.
 The chat feature must be a simple lobby style chat where all registered users 
 are able to chat in a single room with any other online registered members.
 
-All registered users are visible as a panel of avatars either across the top of left.
+All registered users are visible as a panel of avatars either across the top or left.
 These user avatars must display the users first name and their online / offline 
 status.
 Updating the online / offline user status has already been implemented.
@@ -361,11 +361,15 @@ The chat feature Api box, all it's models, services and hooks are
 at your discretion however all end points must require authentication.
 
 Following the chat app guide in the Feathers js docs will give you a good idea 
-of how to tackle this features.
+of how to tackle this feature.
 
 Bonus points are awarded for mobile responsive design efforts and adding a mobile
-menu button to the layout feature that toggle the primary app navigation, however this 
+menu button to the layout feature that toggles the primary app navigation, however this 
 is not a requirement.
+
+Bonus, Bonus points for implementing a direct messages feature part using Api-box's channels and 
+implementing secondary level navigation in the web layout feature. Again, however, this is 
+not a requirement.
 
 Estimated completion time is from 4 - 8 hours depending on familiarity with under-the-hood libs.
 
