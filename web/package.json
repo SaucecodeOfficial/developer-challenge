@@ -1,0 +1,46 @@
+{
+  "name": "saucecode-web",
+  "version": "0.0.1",
+  "description": "Assessment project web ui",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build"
+  },
+  "dependencies": {
+    "@feathersjs/authentication-client": "^1.0.4",
+    "@feathersjs/feathers": "^3.2.1",
+    "@feathersjs/socketio-client": "^1.1.2",
+    "change-case": "^3.0.2",
+    "common-tags": "^1.8.0",
+    "cxs": "^6.2.0",
+    "globrex": "^0.1.1",
+    "history": "^4.7.2",
+    "localforage": "^1.7.2",
+    "lodash.throttle": "^4.1.1",
+    "ramda": "^0.25.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-fontawesome": "^1.6.1",
+    "react-hot-loader": "^4.3.6",
+    "react-jsonschema-form": "^1.0.4",
+    "react-pattern-match": "^3.0.1",
+    "react-popper": "^1.0.2",
+    "react-redux": "^5.0.7",
+    "reactstrap": "^6.4.0",
+    "redux": "^4.0.0",
+    "redux-first-router": "^0.0.16-next",
+    "redux-first-router-link": "^1.4.2",
+    "redux-first-router-restore-scroll": "^1.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-logic": "^1.0.1",
+    "redux-toolbelt": "^2.1.5",
+    "rxjs": "^6.3.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "devDependencies": {
+    "@neutrinojs/react": "^8.3.0",
+    "neutrino": "^8.3.0"
+  }
+}
