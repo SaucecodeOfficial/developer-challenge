@@ -69,7 +69,6 @@ familiar regardless.
 
 Arguably one of the most time consuming aspects of modern Node / JavaScript development is the
 complexity of setting up a build tool-chain and core features.
-
 We don't want candidates to waste time engineering webpack configs for colonizing Mars, and so 
 project contains stripped-down and simplified versions of our internal implementation libs 
 and core features with a simple build tool-chain.
