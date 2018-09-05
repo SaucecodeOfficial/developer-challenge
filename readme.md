@@ -174,7 +174,6 @@ import { task } from './libs'
 const filterSomething = task(
   t => list => t.filter(item => t.eq(item.name, 'something'), list)
 )
-
 ```
 
 #### api-box
@@ -208,7 +207,6 @@ Utility for declaring and composing features on both the web and server.
 Signature:
 ```
 function createFeature(factory: (nextProps) => FeatureDefinition, defaultProps?: object) => Feature
-
 ```
 
 Reviewing the included core server and web implementations as well as the 
@@ -220,7 +218,6 @@ A declarative interface over redux, redux-toolbelt and redux logic to avoid unne
 and enforce a consistent and predictable functional state management style of:
 ```
 guard(s) - allow/reject-> mutation(s) -> side effect(s) -> mutation(s)
-
 ```
 
 The fundamental building block for an application's state management.
@@ -234,7 +231,6 @@ guards: (guard, { actions, mutations }) => [ guard(...) ]
 effects: (fx, { actions, mutations }) => [ guard(...) ]
 onInit: ({ dispatch, getState, actions, mutations, ...ctx }) => void
 }
-
 ```
 
 ##### Mutations:
@@ -244,12 +240,10 @@ invoked by the generated action creator
 A mutation is created with the mutation function:
 ```
 mutation(actionTypes: string | string[], reducer: (state, action)=> nextState) {}
-
 ```
 which returns the following for composing into the consuming statebox:
 ```
 { mutations: [f()], actions:[''], reducer(){} }
-
 ```
 
 ##### Effects / Guards:
@@ -259,7 +253,6 @@ implemented with simpler semantics and sensible defaults:
 ```
 guard -> validate
 effect -> process
-
 ```
 
 ##### State Store:
@@ -276,7 +269,6 @@ middleware: [ ... ],
 enhance: (appliedMiddleware) => [ ... ]
 initial: { ... }
 }
-
 ```
 
 ##### Routing:
@@ -307,7 +299,6 @@ and run:
 
 ```
 yarn install
-
 ```
 
 You will need to create an empty Mysql or Postgres DB and enter the 
@@ -323,7 +314,6 @@ From there run:
 
 ```
 yarn start
-
 ```
 This starts the Neutrino builds and outputs the addresses of respective 
 running servers.
