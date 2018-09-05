@@ -194,7 +194,7 @@ function createApiBox({
         afterConfig(app) => void,
         onSetup(app) => void,
         onStart(app) => void,
-    
+    }
 }) => ApiBox
 ```
 Reviewing the included core server implementations and the lib code 
