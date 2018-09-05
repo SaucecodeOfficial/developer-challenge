@@ -14,7 +14,7 @@ internally for candidates to evaluate and determine if it interests them.
 
 - Complete the challenges below as best you can.
 
-- Submit a pull request for your complete challenges with 
+- Submit a pull request for your complete challenges, commit history intact, with 
 a brief summary of the changes and / or issues faced.
 
 ## Submission evaluation
